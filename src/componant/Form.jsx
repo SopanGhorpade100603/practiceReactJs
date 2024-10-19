@@ -1,51 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-function Form() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: ''
-  });
+export default function Form() {
+  // let [fullName, SetFullname] = useState("");
+  // let [userName, setUserName] = useState("");
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const handleNameChange = (e) => {
+  //   SetFullname(e.target.value);
+  // };
+  // const handleUserChange = (e) => {
+  //   setUserName(e.target.value);
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Form submitted successfully!');
-  };
-
+  let [formData, setFormData] = useState
   return (
-    <div className="form-container">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className="input"
-        />
-
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="input"
-        />
-
-        <input type="submit" value="Submit" className="submit-button" />
-      </form>
+    <div className="center form-container">
+      <label htmlFor="fullname">Name</label>
+      <input
+        type="text"
+        placeholder="Enter your name"
+        value={fullName}
+        onChange={handleNameChange}
+        id="fullname"
+      />
+      <label htmlFor="username">username</label>
+      <input
+        type="text"
+        placeholder="Enter your name"
+        value={userName}
+        onChange={handleUserChange}
+        id="username"
+      />
+      <button>Submit</button>
     </div>
   );
 }
-export default Form;
