@@ -7,6 +7,7 @@ import Form  from './componant/Form'
 import UseEffectHooks from './componant/UseEffectHooks'
 import UseStateHooks from './componant/UseStateHooks'
 import Lottery from './componant/lotteryGame/Lottery'
+import FirstPage from './componant/FirstPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,9 @@ function App() {
   return (
     <>
     <Navbar />
+    <h1></h1>
     <Routes>
+      <Route path='/'element={<FirstPage />} />
       <Route path='/like' element={<LikeButton />} />
       <Route path='/form' element={<Form />} />
       <Route path='/useStateHooks' element={<UseStateHooks />} />
