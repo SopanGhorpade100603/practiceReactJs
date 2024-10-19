@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light gray background for the body */
+  margin: 0;
+  padding: 20px; /* Padding around the entire body */
+}
+
+/* Centering elements */
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto; /* Center the container with margin */
+  padding: 20px; /* Padding inside the center */
+  width: 320px; /* Define width */
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.central, .heading{
+padding-left: 20%;
+}
+
+/* Navbar Styles */
+.navbar {
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-bg {
+  background-color: #ffc300;
+}
+
+.setActiveBg {
+  background-color: #ae2012;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 0.9em; /* Smaller font size for mobile */
+    margin-right: 5px; /* Reduced margin for better spacing */
+  }
+}
+
+/* Counter Styles */
+h2 {
+  font-size: 2em; /* Larger font size for visibility */
+  margin-bottom: 20px;
+  font-weight: bold; /* Stronger emphasis */
+  color: #333; /* Darker text color for contrast */
+}
+
+/* Button Styles */
+button {
+  padding: 12px 25px; /* Increased padding for better touch targets */
+  font-size: 1.1em; /* Larger font size for buttons */
+  font-weight: bold; /* Bold text for emphasis */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for effects */
+  margin: 10px; /* Margin around buttons */
+}
+
+/* Increment button styling */
+.increment {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+}
+
+/* Hover effect for increment button */
+.increment:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Decrement button styling */
+.decrement {
+  background-color: #f44336; /* Red background */
+  color: white;
+}
+
+/* Hover effect for decrement button */
+.decrement:hover {
+  background-color: #e53935; /* Darker red on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Accessibility focus styles */
+button:focus {
+  outline: none; /* Remove default outline */
+}
+
+.decrement:focus {
+  box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.5); /* Custom focus outline for decrement */
+}
+
+/* Ticket Container Styles */
+.Ticket {
+  border: 2px solid #000; /* Slightly thicker border */
+  border-radius: 14px;
+  padding: 10px 20px; /* Adjusted padding for better spacing */
+  display: flex;
+  justify-content: space-around; /* Evenly distribute space between ticket numbers */
+  align-items: center;
+  margin: 20px 0; /* Add margin around the ticket for better separation */
+  background-color: #f8f8f8; /* Light background for better contrast */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a more polished look */
+}
+
+/* Ticket Number Styles */
+.TicketNum {
+  font-size: 1.2em; /* Increase font size for readability */
+  font-weight: 600; /* Bold the ticket number */
+  color: #333; /* Darker color for ticket numbers */
+  padding: 5px 10px; /* Add padding for space around numbers */
+  background-color: #e0e0e0; /* Slightly darker background for the ticket number */
+  border-radius: 8px; /* Rounded corners for each ticket number */
+  margin: 0 5px; /* Space between numbers */
+  display: inline-block;
+}
+
+/* Styling for the text inside Ticket */
+.Ticket p {
+  font-size: 1.5em; /* Make the 'Ticket' label larger */
+  font-weight: 700; /* Bold text */
+  margin-bottom: 8px; /* Add space below the label */
+  text-align: center; /* Center the label */
+}
+
+/* Buy Ticket Button Styles */
+button {
+  background-color: #4CAF50; /* Green background */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding for a bigger clickable area */
+  border: none; /* Remove default borders */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.1em; /* Slightly bigger font */
+  font-weight: 600; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for Buy Ticket button */
+button:hover {
+  background-color: #45a049; /* Darker green when hovering */
+  transform: scale(1.05); /* Slight lift effect on hover */
+}
+
+/* Active (clicked) effect */
+button:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+  transform: scale(0.98); /* Slightly shrink on click for a 'press' effect */
+}
+
+/* style for form  */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 100px auto;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* style for likeButton hearts  */
+.red{
+  font-size: 2rem;
+  color: red;
+}
+
+.fa-heart{
+  font-size: 2rem;
+}
+
+/* Clicks text styling */
+.center span {
+  display: inline-block;
+  width: 10px; /* Adjust space between buttons */
+}
