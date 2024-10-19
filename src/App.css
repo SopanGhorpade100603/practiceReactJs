@@ -20,8 +20,54 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.central, .heading{
-padding-left: 20%;
+/* Form field styles */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't increase width */
+  font-size: 1em;
+}
+
+/* Submit button inside the form */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Form container responsive */
+@media (max-width: 768px) {
+  .center {
+    width: 90%; /* Adjust form width for mobile screens */
+    padding: 15px;
+  }
+
+  form input {
+    font-size: 0.9em; /* Slightly smaller input font size for mobile */
+  }
+
+  form button {
+    font-size: 1em; /* Adjust button size for mobile */
+  }
 }
 
 /* Navbar Styles */
@@ -164,24 +210,7 @@ button:active {
   transform: scale(0.98); /* Slightly shrink on click for a 'press' effect */
 }
 
-/* style for form  */
-.form-container {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: 100px auto;
-}
-
-.input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
+/* Submit button */
 .submit-button {
   width: 100%;
   padding: 10px;
@@ -196,18 +225,18 @@ button:active {
   background-color: #218838;
 }
 
-/* style for likeButton hearts  */
-.red{
+/* Heart like button styles */
+.red {
   font-size: 2rem;
   color: red;
 }
 
-.fa-heart{
+.fa-heart {
   font-size: 2rem;
 }
 
 /* Clicks text styling */
-.center span {
+/* .center span {
   display: inline-block;
   width: 10px; /* Adjust space between buttons */
-}
+} */
