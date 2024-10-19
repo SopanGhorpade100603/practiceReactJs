@@ -11,7 +11,7 @@ export default function Form() {
   //   setUserName(e.target.value);
   // };
 
-  let [formData, setFormData] = useState
+  let [formData, setFormData] = useState({ fullName: "", userName: "" });
   return (
     <div className="center form-container">
       <label htmlFor="fullname">Name</label>
