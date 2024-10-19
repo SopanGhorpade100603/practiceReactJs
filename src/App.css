@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   background-color: #f4f4f4; /* Light gray background for the body */
   margin: 0;
   padding: 20px; /* Padding around the entire body */
@@ -19,6 +19,8 @@ body {
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
+
+
 
 /* Form field styles */
 form label {
@@ -81,7 +83,7 @@ form button:hover {
 }
 
 .setActiveBg {
-  background-color: #ae2012;
+  background-color: #fff3b0;
   color: white;
 }
 
@@ -235,8 +237,7 @@ button:active {
   font-size: 2rem;
 }
 
-/* Clicks text styling */
-/* .center span {
-  display: inline-block;
-  width: 10px; /* Adjust space between buttons */
-} */
+input[type='text'],input[type='password'],input[type='textarea'],input[type='number']{
+  background-color: #edede9;
+  font-family: 'Times New Roman', Times, serif;
+}

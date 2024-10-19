@@ -33,6 +33,16 @@ export default function Navbar() {
                 className={({ isActive }) => 
                   isActive ? 'nav-link active navbar setActiveBg' : 'nav-link navbar'
                 }
+                to="/commentform"
+              >
+                CommentForm
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className={({ isActive }) => 
+                  isActive ? 'nav-link active navbar setActiveBg' : 'nav-link navbar'
+                }
                 to="/useStateHooks"
               >
                 useStateHooks
